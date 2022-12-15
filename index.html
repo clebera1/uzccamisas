@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UZC Camisas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class = "container">
+       <div class = "header">
+        <span>Lancamento de Plantio</span>
+        
+        <div class = "filtro">
+        <input type="search" id="filter" name = "filter" placeholder="Filtre aqui">
+        <button onclick="openModal()" id="new"> Incluir </button>
+        </div>
+       </div> 
+
+       <div class ="divTable">
+        <table>
+         <thead>
+            <tr>
+            
+                <th>Cliente</th>
+                <th>Camisa </th>
+                <th>Tamanho</th>
+                <th>Quantidade</th>          
+                <th>Dia Pedido</th>
+                <th class = "acao"> Editar</th>
+                <th class = "acao"> Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class ="modal-container">
+        <div class ="modal">
+            <form>
+
+                <label for="m-lote">Cliente</label>
+                <input id ="m-lote"type="text" required>
+
+                <label for="m-variedade">Camisa</label>
+                <input id ="m-variedade"type="text" required>
+
+                <label for="m-quantidade">Tamanho</label>
+                <input id ="m-quantidade"type="text" required>
+
+                <label for="m-quantidade">Quantidade</label>
+                <input id ="m-bancada"type="text" required>
+
+                <label for="m-dia">Dia Pedido</label>
+                <input id ="m-dia"type="date"  required>
+
+
+                <button id ="btnSalvar">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="incluir.js"> </script>
+    <script src ="filtrar.js"></script>
+</body>
+</html>
